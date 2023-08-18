@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+  <id>com.github.anonfunc.vcidea</id>
+  <name>Voice Code Idea</name>
+  <version>dummy</version>
+  <vendor email="anonfunc@gmail.com" url="http://www.github.com/anonfunc/intellij-voicecode">anonfunc</vendor>
+
+  <description><![CDATA[
+    <p>This plugin adds a small web server which supports a Talon module, but can be used generically as an
+    HTTP based RPC driven by any system on the same machine.</p>
+
+    <p>For an example integration, see <a href="https://github.com/anonfunc/talon-user">the author's Talon files.</a></p>
+
+    <p>Support, if any, provided in the #jetbrains channel of the Talon slack. See <a href="https://talonvoice.com/">the Talon homepage</a> for
+    more information about Talon.</p>
+  ]]></description>
+
+  <change-notes><![CDATA[
+  Will be replaced.
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="192"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <application-components>
+    <component>
+      <implementation-class>com.github.anonfunc.vcidea.VoicecodePlugin</implementation-class>
+    </component>
+  </application-components>
+</idea-plugin>
